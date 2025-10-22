@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            border-collapse: collapse;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            background-color: white;
+            min-height: 73vh;
+        }
+
+        table {
+            border: 5px solid black;
+            margin: 0 auto;
+        }
+
+        table * {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        thead * {
+            border: 4px solid black;
+            background-color: lightgray;
+        }
+
+        th,
+        td {
+            text-align: center;
+            width: 100px;
+        }
+
+
+
+        .spansk {
+            background-color: lightsalmon;
+        }
+
+        .R1 {
+            background-color: lightskyblue;
+        }
+
+        .IT {
+            background-color: rgb(128, 216, 212);
+        }
+
+        .Norsk {
+            background-color: lightcoral;
+        }
+
+        .Fysikk {
+            background-color: rgb(243, 192, 243);
+        }
+
+        .Historie {
+            background-color: rgb(224, 224, 151);
+        }
+
+        .Gym {
+            background-color: lightgoldenrodyellow;
+        }
+
+        .Kjemi {
+            background-color: lightgreen;
+        }
+
+        .kt {
+            background-color: lightpink;
+        }
+
+        tbody>tr :first-child {
+            background-color: lightgray;
+            width: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+
+
+            <ul>
+                <li><a href="index.html">Hjem<i class="fa-solid fa-house"></i></a></li>
+                <li><a href="timeplan.html">Timeplan<i class="fa-solid fa-calendar"></i></a></li>
+                <li><a href="#">Interesser<i class="fa-solid fa-futbol"></i></a></li>
+                <li><a href="#">Meg og min familie<i class="fa-solid fa-people-group"></i></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <table>
+<tr>
+                <th>Tid</th>
+                <th colspan="2">Mandag</th>
+                <th colspan="2">Tirsdag</th>
+                <th colspan="2">Onsdag</th>
+                <th colspan="2">Torsdag</th>
+                <th colspan="2">Fredag</th>
+                
+        </tr>
+        <tr>
+            <th>8:15-9:50</th>
+            <th class="IT">IT</th>
+            <th class="Kjemi">Kjemi</th>
+            <th colspan="2"></th>
+            <th colspan="2" class="Norsk">Norsk</th>
+            <th colspan="2" class="Kjemi">Kjemi</th>
+            <th colspan="2" class="R1">R1</th>
+        </tr>
+        <tr>
+
+            <th>10:00-11:35</th>
+            <th colspan="2" class="R1">R1</th>
+            <th colspan="2" class="Fysikk">Fysikk</th>
+            <th colspan="2" class="Gym">Gym</th>
+            <th colspan="2" class="spansk">Spansk</th>
+            <th colspan="2" class="IT">IT</th>
+        </tr>
+        <tr>
+            <th>11:35-12:20</th>
+            <th colspan="9">Lunsj</th>
+        </tr>
+        <tr>
+            <th>12:20-11:35</th>
+            <th colspan="2" class="Historie">Historie</th>
+            <th colspan="2"class="spansk">Spansk</th>
+            <th colspan="2" class="IT">IT</th>
+            <th colspan="2" class="Fysikk">Fysikk</th>
+            <th colspan="2" class="Norsk">Norsk</th>
+        </tr>
+
+        <tr>
+            <th>14:05-15:40</th>
+            <th colspan="2" class="Fysikk">Fysikk</th>
+            <th colspan="2" class="Kjemi">Kjemi</th>
+            <th colspan="2"></th>
+            <th class="kt">Klassens time</th>
+            <th class="R1">R1</th>
+            <th colspan="2"></th>
+        </tr>
+        
+
+    </table>
+</body>
+
+</html>
