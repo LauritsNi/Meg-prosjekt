@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+     <style>
+            * {
+                margin: 0;
+                box-sizing: border-box;
+                padding: 0;
+            }
+
+            img {
+                width: 100%;
+                display: block;
+            }
+
+            .familie {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 200px);
+                gap: 10px;
+                max-width: 1200px;
+                width: 80%;
+                margin: 0 auto;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .familie img {
+                aspect-ratio: 1/1;
+                object-fit: cover;
+
+            }
+
+            .familie div {
+                margin: 0 auto 0;
+                text-align: center;
+            }
+
+            @media (max-width: 768px) {
+                .familie {
+                    width: 95%;
+                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                }
+            }
+        </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+
+
+            <ul>
+                <li><a href="index.html">Hjem<i class="fa-solid fa-house"></i></a></li>
+                <li><a href="timeplan.html">Timeplan<i class="fa-solid fa-calendar"></i></a></li>
+                <li><a href="interesser.html">Interesser<i class="fa-solid fa-futbol"></i></a></li>
+                <li><a href="Familie.html">Meg og min familie<i class="fa-solid fa-people-group"></i></i></a></li>
+            </ul>
+        </div>
+
+       
+    </header>
+<h1 class="overskrift">Dette er (litt av) min familie!</h1>
+    <div class="familie">
+        <div class="card"><img src="Bilder/meg.jpg" alt="meg">
+            <p>Meg og min vakre fugl</p>
+        </div>
+        <div class="card"><img src="Bilder/Far.jpg" alt="far">
+            <p>Dette er faren min</p>
+        </div>
+        <div class="card"><img src="Bilder/Bestefar.jpg" alt="Bestefar">
+            <p>Dette er Bestefaren min</p>
+        </div>
+        <div class="card">
+            <img src="Bilder/Bestemor.jpg" alt="Bestemor">
+            <p>Dette er bestemoren min</p>
+        </div>
+        <div class="card">
+            <img src="Bilder/bestemorogfar.jpg" alt="bestemorogfar">
+            <p>Bestemor og Bestefar</p>
+        </div>
+        <div class="card">
+            <img src="Bilder/Erik.jpg" alt="Erik">
+            <p>Dette er min onkel erik</p>
+        </div>
+        <div class="card"><img src="Bilder/Gotti.jpg" alt="Gotti">
+            <p>Dette er tante Gotti</p>
+        </div>
+        <div class="card">
+            <img src="Bilder/Klaus.jpg" alt="Klaus">
+            <p>Dette er fuglen min Klaus</p>
+        </div>
+        <div class="card">
+            <img src="Bilder/Hedvig.jpg" alt="Hedvig">
+            <p>Dette er søstra mi</p>
+        </div>
+        <div class="card">
+            <img src="Bilder/Mamma.png" alt="Mor">
+            <p>Dette er moren min</p>
+        </div>
+        <div class="card">
+            <img src="Bilder/Momor.jpg" alt="mormor">
+            <p>Dette er Mormor</p>
+        </div>
+        <div class="card">
+            <img src="Bilder/Morfar.jpg" alt="morfar">
+            <p>Dette er Morfar</p>
+        </div>
+    </div>
+   <footer>
+        <ul>
+            <li>Opphavsrett: Nitter AS</li>
+            <li>Ansvarlig Redaktør: Laurits Nitter</li>
+            <li>Nettansvarlig: Klaus Nitter</li>
+            <li></li>
+        </ul>
+        <ul>
+            <i class="fa-solid fa-face-smile"></i>
+        </ul>
+        <ul>
+            <li>
+                <h3>Kontakt meg</h3>
+            </li>
+            <li>Jobb(rush trampolinepark): 989 08 790</li>
+            <li>Personlig: 466 71 600</li>
+            <li>Epost: Laurits@nitter.no</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

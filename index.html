@@ -13,11 +13,12 @@
         main {
             display: flex;
             flex: 10;
-            padding: 200px;
+            padding: 20px;
+            gap: 20px;
         }
 
         .bilde {
-            flex: 1 1 70%;
+            flex: 1 1 50%;
         }
 
         .tekst {
@@ -27,36 +28,48 @@
             gap: 10;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
 
         }
 
-        footer {
-            background-color: aqua;
-            text-decoration: none;
-            color: aliceblue;
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                padding: 15px;
+                gap: 15px;
+            }
 
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            place-items: center;
+            .bilde {
+                flex: 1 1 100%;
+            }
+
+            .tekst {
+                flex: 1 1 100%;
+                text-align: center;
+            }
         }
     </style>
 
 </head>
 
 <body>
-    <header>
+   <header>
         <div class="nav">
 
 
             <ul>
                 <li><a href="index.html">Hjem<i class="fa-solid fa-house"></i></a></li>
                 <li><a href="timeplan.html">Timeplan<i class="fa-solid fa-calendar"></i></a></li>
-                <li><a href="#">Interesser<i class="fa-solid fa-futbol"></i></a></li>
-                <li><a href="#">Meg og min familie<i class="fa-solid fa-people-group"></i></i></a></li>
+                <li><a href="interesser.html">Interesser<i class="fa-solid fa-futbol"></i></a></li>
+                <li><a href="Familie.html">Meg og min familie<i class="fa-solid fa-people-group"></i></i></a></li>
             </ul>
         </div>
+
+       
     </header>
+    <h1 class="overskrift">Velkommen til min gale verden!</h1>
     <main>
+
         <div class="bilde"><img src="Bilder/Oljemaleri.png" alt="Megselv"></div>
         <div class="tekst">
             <h3>Mannen, myten, Legenden</h3>
@@ -71,18 +84,21 @@
 
     <footer>
         <ul>
-            <li>Laurits Benjamisnen Nitter</li>
-            <li></li>
-            <li></li>
+            <li>Opphavsrett: Nitter AS</li>
+            <li>Ansvarlig Redaktør: Laurits Nitter</li>
+            <li>Nettansvarlig: Klaus Nitter</li>
             <li></li>
         </ul>
         <ul>
             <i class="fa-solid fa-face-smile"></i>
         </ul>
         <ul>
-            <li>kontakt meg</li>
-            <li></li>
-            <li></li>
+            <li>
+                <h3>Kontakt meg</h3>
+            </li>
+            <li>Jobb(rush trampolinepark): 989 08 790</li>
+            <li>Personlig: 466 71 600</li>
+            <li>Epost: Laurits@nitter.no</li>
         </ul>
     </footer>
 </body>

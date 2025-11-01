@@ -1,47 +1,101 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-weight: normal;
-        }
 
-        html {
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+  }
 
-            font-size: 16px;
-        }
+  html {
 
-        ol,
-        ul {
-            list-style: none;
-        }
+      font-size: 16px;
+  }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-body {
-    font-size: 16;
+  ol,
+  ul {
+      list-style: none;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  body {
+      font-size: 16;
       font-family: "Roboto Condensed", sans-serif;
+  }
+main{
+    max-width: 1000px;
+    margin: 0 auto;
 }
-        .nav {
-            background-color: aqua;
+  .nav {
+      background-color: aqua;
+      padding: 15px;
+
+  }
+
+  .nav a {
+      text-decoration: none;
+      color: aliceblue;
+  }
+
+  .nav>ul {
+      display: flex;
+      justify-content: space-around;
+      font-size: 20px;
+
+  }
+
+  .nav a:hover {
+      background-color: blueviolet;
+      transition: 500ms;
+  }
+
+  footer {
+      background-color: aqua;
+      text-decoration: none;
+      color: aliceblue;
+      padding: 10px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      place-items: center;
+      margin-top: auto;
+      
+  }
+
+  footer > * {
+    text-align: center;
+  }
+  .overskrift{
+            text-align: center;
+            padding: 10px;
         }
 
-        .nav a {
-            text-decoration: none;
-            color: aliceblue;
-        }
+/* Media queries for mobil */
+@media (max-width: 768px) {
+    .nav > ul {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+    }
 
-        .nav>ul {
-            display: flex;
-            justify-content: space-around;
-            font-size: 20px;
-            
-        }
+    .nav a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
 
-        .nav a:hover{
-            background-color: blueviolet;
-            transition: 500ms;
-        }
+    footer {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
