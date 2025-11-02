@@ -17,22 +17,20 @@
                 "foto1 tekst1"
                 "tekst2 foto2"
                 "foto3 tekst3";
-            gap: 16px;
+            gap: 12px;
             padding: 10px;
         }
 
         .container img {
-  
-      width: 100%;
-    height: 100%;
-    max-width: none;
-    object-fit: cover;
-    border-radius: 12px;
-}
 
-        .container>* {
-            border: 1px solid black;
+            width: 100%;
+            height: 100%;
+            max-width: none;
+            object-fit: cover;
+            border-radius: 12px;
         }
+
+       
 
         .foto.nr1 {
             grid-area: foto1;
@@ -65,6 +63,16 @@
 
         .tekst {
             width: 100%;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        .tekst p {
+            margin: 0;
+            font-size: 16px;
+            text-align: justify;
         }
 
         @media (max-width: 768px) {
@@ -78,13 +86,21 @@
                     "foto3"
                     "tekst3";
             }
+
+            .tekst {
+                padding: 12px;
+            }
+
+            .tekst p {
+                text-align: left;
+            }
         }
     </style>
 
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="nav">
 
 
@@ -96,32 +112,39 @@
             </ul>
         </div>
 
-       
+
     </header>
     <h1 class="overskrift">Jeg digger skole, men hva annet digger jeg? Her er noen eksempler</h1>
     <main>
         <div class="container">
             <div class="foto nr1"><img src="Bilder/Delfina.jpg" alt="'Delfina"></div>
-            <div class="foto nr2"><img src="Bilder/simen.jpg" alt="Simen"></div>
-            <div class="foto nr3"><img src="Bilder/Rush.jpg" alt="Rush"></div>
+            <div class="foto nr2"><a href="Maleri.html"><img src="Bilder/simen.jpg" alt="Simen"></a></div>
+            <div class="foto nr3"><a href="Maleri.html"><img src="Bilder/Rush.jpg" alt="Rush"></a></div>
 
             <div class="tekst nr1">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus reiciendis placeat facilis eius!
-                    Recusandae earum provident possimus, voluptates aperiam quos quaerat veniam debitis reprehenderit
-                    voluptatibus nihil dignissimos fugiat repudiandae at ab minus assumenda inventore distinctio optio
-                    esse eius aliquam quo iure quas! Quia libero magni ad consequatur obcaecati delectus ratione?</p>
+                <p>Drømmen om å ha hund har alltid levd inni meg, og hvis det hadde vært opp til meg hadde jeg hatt tre;
+                    Ole, Dole og Doffen, men gudene valgte å forbanne meg og valgte å gi meg og min far hundeallergi.
+                    For meg har savnet om hund ikke vært så stort egentlig, sikkert fordi jeg fikk en fugl(Klaus). For
+                    min far derimot har savnet utviklet seg til noe værre, og siden jeg var liten har han hatt diagnosen
+                    IHS(Inbildt Hund Syndrom). IHS er svært krevende og kommer ofte i perioder. Sykdommen kan
+                    sammenlignes med bipolar lidelse. For meg er det spessielt krevende hvis jeg skal ha venner på besøk
+                    når far er hund, og jeg må gå tur med han for at han skal få gått på do. Hunden på bildet er
+                    forøvrig hunden til en venn av meg. Hunden heter Delfina </p>
             </div>
             <div class="tekst nr2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsum incidunt tempore expedita,
-                    distinctio itaque ullam doloribus nisi eligendi sit suscipit! Reiciendis, nemo iure totam quae eius
-                    saepe eveniet illo, possimus asperiores vitae animi accusantium aperiam provident natus ut incidunt
-                    quo quisquam quod quaerat in necessitatibus eligendi tempora. Iusto, quos.</p>
+                <p>Ikke bare er gutten høy og kjekk, men han er også politisk engasjert, og de viktigste sakene for meg
+                    er; Feminisme, Likestilling og MeToo. På bildet ser du meg og noen kompiser som ifølge Simen Velle
+                    "viser fingeren til venstresiden" personlig vil jeg ikke vise fingerene mine til noen andre enn
+                    søstra mi, når vi tar vår ukentlige søskenmankeyr. </p>
             </div>
             <div class="tekst nr3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, at dolores. Ipsa corporis dolorum
-                    repellendus. Id optio dolorem consequatur possimus, sit hic tempora in recusandae laudantium ad
-                    soluta similique temporibus distinctio, impedit velit nesciunt alias? Fugit tempore a nulla ex
-                    excepturi itaque ea consequatur temporibus, velit delectus laborum, accusantium ad.</p>
+                <p>Selvom jeg liker best å sitte hjemme å slappe av med en pose sørlandschips salt og eddik, må det jo
+                    komme inn penger på ett eller annet vis og. Så før sommeren, etter over 30 jobbsøknader sendt fikk
+                    jeg jobb på Rush trampolinepark på Grini. Fra jeg starter rett før sommerferien og til nå har jeg
+                    sammlet opp over 300 timer med erfaring om hvordan en skal drive en trampolinepark. Det er hardt
+                    arbeid, men motiverende når du tenker på 131 kronene du tjener i timen (+18kr på søndager og lørdag
+                    etter klokken 16). Å ha jobb er kjempe gøy og nå har jeg masse penger jeg kan bruke på tulleting,
+                    som ChatGPT+</p>
             </div>
         </div>
     </main>

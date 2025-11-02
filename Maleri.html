@@ -4,72 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maleri</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
         main {
+            flex-grow: 1;
+        }
+
+        .maleri-container {
             display: flex;
-            flex: 10;
-            padding: 20px;
+            flex-direction: row;
             gap: 20px;
-        }
-
-        .bilde {
-            flex: 1 1 50%;
-        }
-
-        .tekst {
-            flex: 1 1 30%;
-            display: flex;
-
-            gap: 10;
+            padding: 20px;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            text-align: center;
-            padding: 12px;
-            line-height: 1.6;
         }
 
-        .tekst p {
-            margin: 0;
-            font-size: 16px;
-            text-align: justify;
+        .maleri-container img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .maleri-tekst {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
         }
 
         @media (max-width: 768px) {
-            main {
+            .maleri-container {
                 flex-direction: column;
                 padding: 15px;
                 gap: 15px;
             }
 
-            .bilde {
-                flex: 1 1 100%;
-            }
-
-            .tekst {
-                flex: 1 1 100%;
-                text-align: center;
-                padding: 12px;
-            }
-
-            .tekst p {
-                text-align: left;
+            .maleri-container img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                aspect-ratio: 1/1;
             }
         }
     </style>
-
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="nav">
-
-
             <ul>
                 <li><a href="index.html">Hjem<i class="fa-solid fa-house"></i></a></li>
                 <li><a href="timeplan.html">Timeplan<i class="fa-solid fa-calendar"></i></a></li>
@@ -77,17 +69,17 @@
                 <li><a href="Familie.html">Meg og min familie<i class="fa-solid fa-people-group"></i></i></a></li>
             </ul>
         </div>
-
-       
     </header>
-    <h1 class="overskrift">Velkommen til min gale verden!</h1>
-    <main>
 
-        <div class="bilde"><a href="Maleri.html"><img src="Bilder/Oljemaleri.png" alt="Megselv"></a></div>
-        <div class="tekst">
-            <h3>Mannen, myten, Legenden</h3>
-          
-            <p>Hei! Og velkommen til min gale verden! Jeg heter Laurits, og i forbinndelse med et IT-prosjekt har jeg laget denne siden om meg. Her kan du få se timeplanen min lese litt om interessene mine og se noen bilder av noen familiemedlemmene mine(og hvis du trykker på bildet av meg får du se noe hemmelig). Mye av teksten du ser fremover vil være lorem, så håper det går fint</p>
+    <h1 class="overskrift">Mine malerier</h1>
+
+    <main>
+        <div class="maleri-container">
+            <img src="Bilder/Morsom1.jpg" alt="Maleri 1">
+            <div class="maleri-tekst">
+                <p>Hehe, ikke dette bildet av meg, trykk på et annet bilde av meg, og se om du finner hemmeligheten</p>
+            </div>
+            <img src="Bilder/Morsom2.jpg" alt="Maleri 2">
         </div>
     </main>
 
@@ -113,3 +105,4 @@
 </body>
 
 </html>
+
